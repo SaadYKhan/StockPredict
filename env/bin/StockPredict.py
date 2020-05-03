@@ -78,10 +78,10 @@ df['Mac12'] = df['Adj Close'].ewm(span=12, adjust=False).mean()
 #df['Crossover'] = df['Macd'] - df['Signal']
 
 
-#df['Close'].plot()
+df['Close'].plot()
 #df[['SMA50','Close']].plot()
 #df[['Close', 'SMA50', 'SMA200']].plot(figsize=(16,8))
-#mpl.show()
+mpl.show()
 
 #df.to_csv('AAPLCalculated.csv')
 #df1 = df[df['Signal'] > df['Macd']]
